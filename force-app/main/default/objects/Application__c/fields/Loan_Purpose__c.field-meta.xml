@@ -8,6 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Loan_Type__c</controllingField>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -31,10 +32,84 @@
                 <label>Car Purchase</label>
             </value>
             <value>
-                <fullName>Education</fullName>
+                <fullName>House Renovation</fullName>
                 <default>false</default>
-                <label>Education</label>
+                <label>House Renovation</label>
+            </value>
+            <value>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+                <label>Higher Education</label>
+            </value>
+            <value>
+                <fullName>Secondary Education</fullName>
+                <default>false</default>
+                <label>Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Primary Education</fullName>
+                <default>false</default>
+                <label>Primary Education</label>
+            </value>
+            <value>
+                <fullName>Study Abroad</fullName>
+                <default>false</default>
+                <label>Study Abroad</label>
+            </value>
+            <value>
+                <fullName>Land Filling</fullName>
+                <default>false</default>
+                <label>Land Filling</label>
+            </value>
+            <value>
+                <fullName>Business Revival</fullName>
+                <default>false</default>
+                <label>Business Revival</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Student Loan</controllingFieldValue>
+            <valueName>Higher Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student Loan</controllingFieldValue>
+            <valueName>Secondary Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student Loan</controllingFieldValue>
+            <valueName>Primary Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student Loan</controllingFieldValue>
+            <valueName>Study Abroad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing Loan</controllingFieldValue>
+            <valueName>Land Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing Loan</controllingFieldValue>
+            <valueName>House Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing Loan</controllingFieldValue>
+            <valueName>House Renovation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housing Loan</controllingFieldValue>
+            <valueName>Land Filling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Car Loan</controllingFieldValue>
+            <valueName>Car Purchase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Loan</controllingFieldValue>
+            <valueName>Starting a Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business Loan</controllingFieldValue>
+            <valueName>Business Revival</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>
