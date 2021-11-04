@@ -161,6 +161,16 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Applications</pluralLabel>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>First_Name__c</fields>
+        <fields>Last_Name__c</fields>
+        <fields>Loan_Requested__c</fields>
+        <fields>Interest__c</fields>
+        <fields>Total_Repayment__c</fields>
+        <fields>Monthly_Repayment__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
