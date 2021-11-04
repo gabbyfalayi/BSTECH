@@ -153,7 +153,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Application</label>
+    <label>Loan Application</label>
     <nameField>
         <displayFormat>App-{MM}{YY}{0000}</displayFormat>
         <label>Application No</label>
