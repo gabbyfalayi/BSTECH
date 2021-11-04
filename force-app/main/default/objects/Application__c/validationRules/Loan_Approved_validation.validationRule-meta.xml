@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Approved_validation</fullName>
+    <active>true</active>
+    <description>User cannot update Loan Approved field until its Approved</description>
+    <errorConditionFormula>AND(
+   NOT(ISPICKVAL(Status__c, &apos;Approved&apos;)), 
+   NOT(ISBLANK( Loan_Approved__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Loan_Approved__c</errorDisplayField>
+    <errorMessage>Loan approved field cannot be updated until Loan have been approved</errorMessage>
+</ValidationRule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Approved_Monthly_Repayment__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(  Loan_Approved_Terms__c , &apos;12 Months&apos;), Loan_Approved_Repayment__c/12,
+   IF(ISPICKVAL( Loan_Approved_Terms__c , &apos;24 Months&apos;), Loan_Approved_Repayment__c/24,
+    IF(ISPICKVAL( Loan_Approved_Terms__c , &apos;36 Months&apos;), Loan_Approved_Repayment__c/36,
+     IF(ISPICKVAL( Loan_Approved_Terms__c , &apos;48 Months&apos;), Loan_Approved_Repayment__c/48,
+      IF(ISPICKVAL( Loan_Approved_Terms__c , &apos;60 Months&apos;), Loan_Approved_Repayment__c/60,Null 
+    )
+   )
+  )
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Loan Approved Monthly Repayment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>
